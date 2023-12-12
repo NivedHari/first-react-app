@@ -6,13 +6,11 @@ function ExpenseItem(props) {
   return (
     <div className="expense-item">
       <ExpenseDate date={props.date} />
-      
       <ExpenseDetails
-        amount={props.amount}
-        title={props.title}
         location={props.location}
+        title={props.title}
+        amount={props.amount}
       />
-      
     </div>
   );
 }
