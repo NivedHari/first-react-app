@@ -1,6 +1,6 @@
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseItem from "../src/components/Expenses/ExpenseItem";
 
-function App(props) {
+const App = (props) => {
   const expenses = [
     {
       id: "e1",
@@ -67,19 +67,16 @@ function App(props) {
       ></ExpenseItem> */}
 
       {expenses.map((expense) => (
-        <ExpenseItem 
+        <ExpenseItem
           id={expense.id}
           title={expense.title}
           amount={expense.amount}
           date={expense.date}
           location={expense.location}
-          />
-      
+        />
       ))}
-
-      
     </div>
   );
-}
+};
 
 export default App;

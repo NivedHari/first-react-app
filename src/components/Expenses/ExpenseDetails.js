@@ -1,6 +1,6 @@
-import "./ExpenseDetails.css";
+import "../Expenses/ExpenseDetails.css";
 
-function ExpenseDetails(props) {
+const ExpenseDetails = (props) => {
   return (
     <div className="container">
       <div className="expense-details__location">{props.location}</div>
@@ -8,6 +8,6 @@ function ExpenseDetails(props) {
       <div className="expense-details__price">{props.amount}</div>
     </div>
   );
-}
+};
 
 export default ExpenseDetails;
