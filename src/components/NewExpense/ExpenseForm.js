@@ -1,27 +1,42 @@
-import React from "react";
+import React, {useState} from "react";
 import "./ExpenseForm.css";
 
 const ExpenseForm = () => {
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
-        const formValues = Object.fromEntries(formData);
-        console.log("Form Values:", formValues);
-      };
+    const [enteredTitle, setEnteredTitle] = useState("");
+    const [enteredAmount, setEnteredAmount] = useState("");
+    const [enteredDate, setEnteredDate] = useState("");
 
-  return <form onSubmit={handleSubmit}>
+    const titleChangeHandler = (event) => {
+        const newTitle = event.target.value
+        setEnteredTitle(newTitle);
+        console.log("Entered Title : ",newTitle);
+    }
+
+    const amountChangeHandler = (event) => {
+        const newAmount = event.target.value;
+        setEnteredAmount(newAmount);
+        console.log("Entered Amount : ",newAmount);
+    }
+    
+    const dateChangeHandler = (event) => {
+        const newDate = event.target.value;
+        setEnteredDate(newDate);
+        console.log("Entered Date : ",newDate);
+    }
+
+  return <form>
     <div className="new-expense__controls">
         <div className="new-expense__control">
             <label>Title</label>
-            <input type="text" name="title"/>
+            <input type="text" name="title" value={enteredTitle} onChange={titleChangeHandler} />
         </div>
         <div className="new-expense__control">
             <label>Amount</label>
-            <input type="number" min="0.01" step="0.01" name="amount"/>
+            <input type="number" min="0.01" step="0.01" name="amount" value={enteredAmount} onChange={amountChangeHandler}/>
         </div>
         <div className="new-expense__control">
             <label>Date</label>
-            <input type="date" min="2019-01-01" max="2022-12-31" name="date"/>
+            <input type="date" min="2019-01-01" max="2022-12-31" name="date" value={enteredDate} onChange={dateChangeHandler}/>
         </div>
     </div>
     <div className="new-expense__actions">
