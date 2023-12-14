@@ -2,7 +2,7 @@ import "../Expenses/ExpenseDetails.css";
 
 const ExpenseDetails = (props) => {
   return (
-    <div className="container">
+    <div className="card">
       <div className="expense-details__location">{props.location}</div>
       <div className="expense-details__title">{props.title}</div>
       <div className="expense-details__price">{props.amount}</div>

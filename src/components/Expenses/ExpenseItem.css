@@ -9,13 +9,24 @@
   background-color: #4b4b4b;
 }
 
-.button-Delete {
+.button-title {
   color: white;
-  background-color: #aa1a1a;
+  background-color: rgba(197, 197, 90, 0.596);
   border: white 1px solid;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  margin: 1rem;
+}
+
+.button-amount {
+  color: #000;
+  background-color: rgb(187, 187, 187);
+  border: white 1px solid;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 1rem;
 }
 
 /* @media (min-width: 580px) {

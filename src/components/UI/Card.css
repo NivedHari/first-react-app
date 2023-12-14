@@ -1,4 +1,14 @@
 .card {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly; 
+
 }
+
+.expense-details__location,
+.expense-details__title,
+.expense-details__price {
+  display: inherit;
+  flex: inherit;
+}
+

@@ -1,10 +1,3 @@
-.centered-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
   .expenses-container {
     background-color: #03030379;
     border-radius: 12px;
