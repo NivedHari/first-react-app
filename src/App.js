@@ -1,9 +1,11 @@
 import Expenses from "../src/components/Expenses/Expenses";
+import '../src/components/NewExpense/NewExpense'
+import NewExpense from "../src/components/NewExpense/NewExpense";
 
 const App = (props) => {
   return (
     <div>
-      <h2>Let's get started!!</h2>
+      <NewExpense/>
       <Expenses />
     </div>
   );

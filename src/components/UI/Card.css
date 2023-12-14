@@ -1,14 +1,6 @@
 .card {
   display: flex; 
   flex-direction: row;
-  justify-content: space-evenly; 
 
-}
-
-.expense-details__location,
-.expense-details__title,
-.expense-details__price {
-  display: inherit;
-  flex: inherit;
 }
 
