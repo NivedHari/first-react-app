@@ -9,6 +9,15 @@
   background-color: #4b4b4b;
 }
 
+.button-Delete {
+  color: white;
+  background-color: #aa1a1a;
+  border: white 1px solid;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
 /* @media (min-width: 580px) {
   .expense-item__description {
     flex-direction: row;

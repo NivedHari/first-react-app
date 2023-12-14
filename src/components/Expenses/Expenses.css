@@ -1,0 +1,18 @@
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .expenses-container {
+    background-color: #03030379;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    margin: 1rem auto;
+    max-width: 40rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
