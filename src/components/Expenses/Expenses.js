@@ -8,28 +8,24 @@ const Expenses = (props) => {
       title: "Car Insurence",
       amount: '$295.43',
       date: new Date(2020, 7, 13),
-      location: "Canada",
     },
     {
       id: "e2",
       title: "Car Insurence",
       amount: '$170.37',
       date: new Date(2020, 3, 14),
-      location: "Europe",
     },
     {
       id: "e3",
       title: "New Desk",
       amount: '$200.41',
       date: new Date(2020, 5, 15),
-      location: "India",
     },
     {
       id: "e4",
       title: "New TV",
       amount: '$390.23',
       date: new Date(2020, 8, 16),
-      location: "China",
     },
   ];
 
