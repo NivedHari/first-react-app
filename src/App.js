@@ -8,19 +8,19 @@ const dummy_expenses = [
   {
     id: "e1",
     title: "Car Insurence",
-    amount: "$295.43",
+    amount: "295.43",
     date: new Date(2020, 7, 13),
   },
   {
     id: "e2",
     title: "New Desk",
-    amount: "$200.41",
+    amount: "200.41",
     date: new Date(2020, 5, 15),
   },
   {
     id: "e3",
     title: "New TV",
-    amount: "$390.23",
+    amount: "390.23",
     date: new Date(2020, 8, 16),
   },
 ];
